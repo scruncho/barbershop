@@ -14,7 +14,7 @@
   <body>
   <div class="container">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <a class="navbar-brand" href="index.php"><img src="images/logo.png" style="width:50px;height:50px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

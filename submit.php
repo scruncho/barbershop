@@ -1,5 +1,5 @@
 <?php 
-    $title = 'Success';
+    $title = 'Registered';
     require_once 'includes/header.php'; 
     require_once 'database/conn.php';
 
