@@ -45,10 +45,16 @@
 
         <div class="form-group">
             <label for="gender">Gender</label>
-                <!-- <select class="form-control" id="gender" name="gender">  -->
-                <select class="form-control"value="<?php echo $member['gender']?>" id="gender" name="gender">
+            <!-- <select class="form-control" id="gender" name="gender"> -->
+            
+                
             <!-- <select class="form-control" id="exampleFormControlSelect1"> -->
-                <option>Male</option>
+                
+            <!-- <select class="form-control" id="gender" name="gender">  -->
+        
+            <select class="form-control" id="gender" name="gender">  
+    
+                    <option value=" <?php echo $member['gender']?>">Male</option>
                 <option>Female</option>
              </select>
         </div>

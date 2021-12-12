@@ -6,7 +6,8 @@
     $results = $crud->getMembers();
 ?>
 <table class="table table-bordered">
-    <tr>
+   
+<tr>
         <!-- <th>#</th> -->
         <th>First Name</th>
         <th>Last Name</th>
