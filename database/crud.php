@@ -32,9 +32,8 @@
             }
         }
 
-        public function editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty){
-                $sql = "UPDATE `attendee` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=
-                :dob,`emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id";
+        public function editMember($id, $fname, $lname, $gender, $email, $address){
+                $sql = "UPDATE `members` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,`emailaddress`=:email,`address`=:address WHERE members_id = :id";
 
             try{
                     $stmt = $this->db->prepare($sql);
@@ -42,10 +41,10 @@
                     $stmt->bindparam(':id', $id);
                     $stmt->bindparam(':fname', $fname);
                     $stmt->bindparam(':lname', $lname);
-                    $stmt->bindparam(':dob', $dob);
+                    $stmt->bindparam(':gender', $gender);
                     $stmt->bindparam(':email', $email);
-                    $stmt->bindparam(':contact', $contact);
-                    $stmt->bindparam(':specialty', $specialty);
+                    $stmt->bindparam(':address', $address);
+        
 
                     $stmt->execute();
                     return true;
@@ -87,9 +86,9 @@
         }
        
        
-        public function deleteAttendee($id){
+        public function deleteMember($id){
             try{
-            $sql = "delete from attendee where attendee_id = :id";
+            $sql = "delete from members where members_id = :id";
             $stmt = $this->db->prepare($sql);
             $stmt->bindparam(':id', $id);
             $stmt->execute();

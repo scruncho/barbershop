@@ -5,7 +5,7 @@
 
     $results = $crud->getMembers();
 ?>
-<table class="table">
+<table class="table table-bordered">
     <tr>
         <!-- <th>#</th> -->
         <th>First Name</th>
@@ -24,9 +24,9 @@ while($r = $results->fetch(PDO::FETCH_ASSOC)){ ?>
         <td><?php echo $r['gender']  ?></td>
         <td>
             <a href="viewone.php?id=<?php echo $r['members_id']  ?>" class="btn btn-primary">View</a>
-            <!-- <a href="edit.php?id=<?php echo $r['attendee_id']  ?>" class="btn btn-warning">Edit</a>
-            <a onclick= "return confirm('Are you sure you want to delete this  record?');"
-             href="delete.php?id=<?php echo $r['attendee_id']  ?>" class="btn btn-danger">Delete</a> --> -->
+             <a href="update.php?id=<?php echo $r['members_id']  ?>" class="btn btn-warning">Edit</a>
+         <a onclick= "return confirm('Are you sure you want to delete this  record?');"
+             href="delete.php?id=<?php echo $r['members_id']  ?>" class="btn btn-danger">Delete</a> 
     </td>
 
     </tr>
