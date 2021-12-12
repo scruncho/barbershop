@@ -51,11 +51,13 @@
             <!-- <select class="form-control" id="exampleFormControlSelect1"> -->
                 
             <!-- <select class="form-control" id="gender" name="gender">  -->
-        
-            <select class="form-control" id="gender" name="gender">  
+         
+            <select class="form-control" value="<?php echo $member['gender']?>" id="gender" name="gender">  
     
-                    <option value=" <?php echo $member['gender']?>">Male</option>
+            
+                    <option> Male</option>
                 <option>Female</option>
+
              </select>
         </div>
 
