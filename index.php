@@ -6,7 +6,7 @@
     
     <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
     <h1 class="text-center" >REGISTER AND BECOME A MEMBER</h1>
-
+    <div class="container p-5 my-5 border"> 
     <form method="post" action="submit.php">
     <div class="form-group">
             <label for="firstname">First Name</label>
@@ -43,6 +43,7 @@
         
         <button type="submit" name="submit" class="btn btn-primary" class="btn-block" style="width:100%">Submit</button>
 </form>
+</div>
 <br>
 <br>
 <br>
