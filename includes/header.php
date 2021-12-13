@@ -1,3 +1,5 @@
+<?php
+include_once 'includes/session.php' ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,22 +21,45 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  
+  
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+   
+  
+  <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="feature.php">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pricing.php">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-item nav-link" href="viewmembers.php" >Members</a>
+         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+           </li>
+             <li class="nav-item">
+               <a class="nav-link" href="feature.php">Features</a>
+               </li>
+                 <li class="nav-item">
+                <a class="nav-link" href="pricing.php">Pricing</a>
+                </li>
+                <li class="nav-item">
+               <a class="nav-item nav-link" href="viewmembers.php" >Members</a>
+             </li>
+            </ul>
+
+          <ul class="navbar-nav ml-auto">
+          <?php 
+            if(!isset($_SESSION['userid'])){ 
+          ?>
+
+
+          <a class="nav-item nav-link" href="login.php">Login</a>
+          <?php } else {?>
+        
+            <li class="nav-item">
+        <a class="nav-item nav-link" href="login.php" >Login</a>
+        
+        <a class="nav-item nav-link" href="#"><span>Hello <?php echo $_SESSION['username']?>! </span></a>
+          <a class="nav-item nav-link" href="logout.php" >Logout</a>
+          
       </li>
     </ul>
-  </div>
+    <?php }?>
+</div>
 </nav>
 <br>
 <br>

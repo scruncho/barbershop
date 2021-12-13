@@ -1,7 +1,7 @@
 <?php 
     $title = 'Index';
     require_once 'includes/header.php'; 
-    // require_once 'db/conn.php'; 
+    require_once 'database/conn.php'; 
 ?>
     
     <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
