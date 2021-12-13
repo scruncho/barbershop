@@ -14,18 +14,12 @@ include_once 'includes/session.php' ?>
     <title>Mobile Barber Shop - <?php echo $title ?></title>
   </head>
   <body>
-  <div class="container">
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <a class="navbar-brand" href="index.php"><img src="images/logo.png" style="width:50px;height:50px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+ <span class="navbar-toggler-icon"></span>
   </button>
-  
-  
   <div class="collapse navbar-collapse" id="navbarNav">
-   
-  
   <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
          <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
@@ -45,21 +39,17 @@ include_once 'includes/session.php' ?>
           <?php 
             if(!isset($_SESSION['userid'])){ 
           ?>
-
-
           <a class="nav-item nav-link" href="login.php">Login</a>
-          <?php } else {?>
-        
+             <?php } else {?>
             <li class="nav-item">
-        <!-- <a class="nav-item nav-link" href="login.php" >Login</a> -->
-        
              <a class="nav-item nav-link" href="#"><span>Hello <?php echo $_SESSION['username']?>! </span></a>
-          <a class="nav-item nav-link" href="logout.php" >Logout</a>
-          
+          <a class="nav-item nav-link" href="logout.php" >Logout</a> 
       </li>
     </ul>
     <?php }?>
 </div>
 </nav>
+  <div class="container">
+  
 <br>
 <br>

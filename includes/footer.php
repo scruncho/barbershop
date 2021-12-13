@@ -1,6 +1,6 @@
 
-    <div id="footer"> 
-      <footer> Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Mobile Barber Shop</footer>
+    <div id="footer" class="p-3 mb-2 bg-primary text-white fixed-bottom"> 
+      <footer class="text-center"> Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Mobile Barber Shop</footer>
     </div> 
 </div> 
 
