@@ -8,10 +8,10 @@
             $this->db = $conn;
             }
             //function to insert a new record into the attendee database
-            public function insertAttendees($fname, $lname,  $email, $gender, $address){
+            public function insertMembers($fname, $lname,  $email, $gender, $address, $avatar_path){
             try {
             //define squl statement to be executed
-            $sql = "INSERT INTO members (firstname,lastname,emailaddress,gender,address)VALUES (:fname,:lname,:email,:gender,:address)";
+            $sql = "INSERT INTO members (firstname,lastname,emailaddress,gender,address,avatar_path)VALUES (:fname,:lname,:email,:gender,:address,:avatar_path)";
             //prepare the sql statement for execution
             $stmt = $this->db->prepare($sql);
             //bind all placeholders to the actual values
@@ -21,6 +21,7 @@
             $stmt->bindparam(':email', $email);
             $stmt->bindparam(':gender', $gender);
             $stmt->bindparam(':address', $address);
+            $stmt->bindparam(':avatar_path', $avatar_path);
 
             $stmt->execute();
             return true;

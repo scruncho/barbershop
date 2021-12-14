@@ -7,13 +7,24 @@
         //extract values from the $_POST array
         $fname = $_POST['firstname'];
         $lname = $_POST['lastname'];
-    
         $email = $_POST['email'];
         $gender = $_POST['gender'];
         $address = $_POST['address'];
-       
+
+
+
+
+        $orig_file = $_FILES["avatar"]["tmp_name"];
+        $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+       // $destination = $target_dir . basename($_FILES["avatar"]["name"]);
+        $destination = "$target_dir$email.$ext";
+        move_uploaded_file($orig_file,$destination);
+
+        
+
         //call function to insert and track if success or not
-        $isSuccess = $crud->insertAttendees($fname, $lname, $email, $gender, $address);
+        $isSuccess = $crud->insertMembers($fname, $lname, $email, $gender, $address, $destination);
 
         if($isSuccess){
            // echo '<h1 class="text-center text-success">Your Registration Was Successful!</h1>';
@@ -28,6 +39,10 @@
     
     ?>
  <center>
+
+<div class="card" style="width: 18rem;">
+<img src="<?php echo $destination; ?>">
+</div>
 <div class="card" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title"> <?php echo $_POST['firstname'] . ' ' . $_POST['lastname'];?></h5>

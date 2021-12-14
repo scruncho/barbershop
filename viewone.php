@@ -22,6 +22,9 @@
     ?>
 <center>
 <div class="card" style="width: 18rem;">
+<img src="<?php echo empty($result['avatar_path']) ? "uploads/blank.png" : $result['avatar_path']; ?>" >
+</div>
+<div class="card" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title"> <?php echo $result['firstname'] . ' ' . $result['lastname'];?></h5>
         <!-- <h6 class="card-subtitle mb-2 text-muted"> -->
