@@ -20,8 +20,8 @@
 
     }
 ?>
-
-
+<center>
+<div class="card" style="width: 20rem;">
     
     <h1 class="text-center"><?php echo $title ?></h1>
 
@@ -42,6 +42,6 @@
         <a href="#"> Forgot Password </a>
             
     </form>
-
-
+</div>
+</center>
     <?php require_once 'includes/footer.php'; ?>

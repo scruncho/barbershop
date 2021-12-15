@@ -6,8 +6,12 @@
     
     <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
     <h1 class="text-center" >REGISTER AND BECOME A MEMBER</h1>
+
+    <center>
+    <div class="card" style="width: 35rem;">
     <div class="container p-5 my-5 border"> 
     <form method="post" action="submit.php" enctype="multipart/form-data">
+
     <div class="form-group">
             <label for="firstname">First Name</label>
             <input required type="text" class="form-control" id="firstname" name="firstname">
@@ -51,6 +55,8 @@
         <button type="submit" name="submit" class="btn btn-primary" class="btn-block" style="width:100%">Submit</button>
 </form>
 </div>
+</div>
+</center>
 <br>
 <br>
 <br>
