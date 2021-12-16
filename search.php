@@ -49,9 +49,11 @@
 
        <?php 
         //development connection
-    //    $con = mysqli_connect("localhost","root","","barbershop_db");
+        $con = mysqli_connect("localhost","root","","barbershop_db");
+
        //production connection
-       $con = mysqli_connect("remotemysql.com","21p0v5xYW8","$pass","21p0v5xYW8");
+      // $con = mysqli_connect("remotemysql.com","21p0v5xYW8","$pass","21p0v5xYW8");
+      
        if(isset($_GET['search']))
        {
            $filtervalues = $_GET['search'];
