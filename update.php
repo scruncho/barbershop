@@ -37,27 +37,23 @@
             <input type="text" class="form-control" value="<?php echo $member['lastname']?>" id="lastname" name="lastname">
         </div>
        
-        <div class="form-group">
+    
+       <div class="form-group">
             <label for="Email">Email address</label>
             <!-- <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"> -->
-            <input type="text" class="form-control" value="<?php echo $member['emailaddress']?>" id="emailaddress" name="emailaddress">
+            <input readonly type="text" class="form-control" value="<?php echo $member['emailaddress']?>" id="emailaddress" name="emailaddress">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <div class="form-group">
             <label for="gender">Gender</label>
-        
-         
-            <select class="form-control"  id="gender" name="gender">  
-    
+                 <select class="form-control"  id="gender" name="gender">  
                         <option><?php echo $member['gender']?></option>
                     <option> Male</option>
                 <option>Female</option>
-
              </select>
         </div>
 
-    
         <div class="form-group">
             <label for="address">Address</label>
             <!-- <input type="text" class="form-control" id="address" name="address" aria-describedby="phoneHelp"> -->

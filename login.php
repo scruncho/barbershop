@@ -1,5 +1,5 @@
 <?php 
-    $title = 'User Login';
+    $title = 'User Authentication';
     require_once 'includes/header.php'; 
     require_once 'database/conn.php'; 
 
@@ -20,10 +20,12 @@
 
     }
 ?>
+<center><img src="images/logo.png" style="width:150px;height:150px;"></center>
+<br>
 <center>
 <div class="card" style="width: 20rem;">
     
-    <h1 class="text-center"><?php echo $title ?></h1>
+    <h5 class="bg-secondary text-light"><?php echo $title ?></h5>
 
 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
         <table class="table table-sm">
@@ -37,9 +39,10 @@
                 <td><input type="password" name="password" class="form-control" id="password">
                 </td>
             </tr>
-        </table><br/><br/>
-        <input type="submit" value="Login" class="btn btn-primary btn-block"><br/>
-        <a href="#"> Forgot Password </a>
+</table>
+        <input type="submit" value="Login" class="btn btn-secondary"><br/>
+        <br>
+        <!-- <a href="#"> Forgot Password </a> -->
             
     </form>
 </div>
