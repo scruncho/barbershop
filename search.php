@@ -14,7 +14,7 @@
                     <div class="col-md-12">
                         <div class="card mt-4">
                             <div class="card-header">
-                                <h4>hot to make a search box and filter the information from the database</h4>
+                                <h4>Search Members Here</h4>
                                 </div>
                                     <div class="card-body">
                                         <div class="row">
