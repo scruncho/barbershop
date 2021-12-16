@@ -42,17 +42,20 @@
            <!-- <th>#</th> -->
            <th>First Name</th>
            <th>Last Name</th>
-           <th>Gender</th> 
+           <th>Gender</th>
+           <th>Email</th> 
            <th>Actions</th>
        </tr>
 
        <?php 
-
-       $con = mysqli_connect("localhost","root","","barbershop_db");
+        //development connection
+    //    $con = mysqli_connect("localhost","root","","barbershop_db");
+       //production connection
+       $con = mysqli_connect("remotemysql.com","21p0v5xYW8","$pass","21p0v5xYW8");
        if(isset($_GET['search']))
        {
            $filtervalues = $_GET['search'];
-           $query = "SELECT * FROM members WHERE CONCAT(firstname,lastname,emailaddress) LIKE '%$filtervalues%'";
+           $query = "SELECT * FROM members WHERE CONCAT(firstname,lastname,gender,emailaddress) LIKE '%$filtervalues%'";
            $query_run = mysqli_query($con, $query);
 
            if(mysqli_num_rows($query_run) > 0){
@@ -63,6 +66,7 @@ foreach($query_run as $items){
     <td><?php echo $items['firstname']  ?></td>
     <td><?php echo $items['lastname']  ?></td>
     <td><?php echo $items['gender']  ?></td>
+    <td><?php echo $items['emailaddress']  ?></td>
     <td>
         <a href="viewone.php?id=<?php echo $items['members_id']  ?>" class="btn btn-primary">View</a>
          <a href="update.php?id=<?php echo $items['members_id']  ?>" class="btn btn-warning">Edit</a>
