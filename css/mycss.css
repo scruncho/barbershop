@@ -35,4 +35,11 @@ div.desc {
     color: blue;
   }
 
-  body {background-color: purple;}
+  body {
+    background-color: lightblue;
+  }
+  
+
+  p { 
+   color:#0ee9a7;
+  }

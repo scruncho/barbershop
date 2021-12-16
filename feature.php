@@ -1,6 +1,6 @@
 
 <?php 
-    $title = 'Index';
+    $title = 'Gallery';
     require_once 'includes/header.php'; 
     require_once 'database/conn.php'; 
 ?>
