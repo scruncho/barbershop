@@ -5,7 +5,11 @@
     require_once 'database/conn.php'; 
 
     $results = $crud->getMembers();
+
+
+
 ?>
+
 <table class="table table-bordered">
    
 <tr>

@@ -30,7 +30,7 @@ include_once 'includes/session.php' ?>
                <a class="nav-link" href="feature.php">Features</a>
                </li>
                  <li class="nav-item">
-                <a class="nav-link" href="pricing.php">Pricing</a>
+                <a class="nav-link" href="search.php">Search Members</a>
                 </li>
                 <li class="nav-item">
                <a class="nav-item nav-link" href="viewmembers.php" >Members</a>
