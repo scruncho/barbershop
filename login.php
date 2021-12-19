@@ -23,7 +23,7 @@
 <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
 <br>
 <center>
-<div class="card" style="width: 25rem;">
+<div class="card" style="width: 20rem;">
     
     <h5 class="bg-secondary text-light"><?php echo $title ?></h5>
 
@@ -40,7 +40,9 @@
                 </td>
             </tr>
 </table>
-        <button class="btn btn-primary my-5"><a href="index.php" class="text-light">Cancel</a></button> <input type="submit" value="Login" class="btn btn-secondary"><br/>
+        
+        <a href="index.php" class="btn btn-primary my-2 text-light">Cancel</a> <input type="submit" value="Login" class="btn btn-secondary"><br/>
+        
         <br>
         <!-- <a href="#"> Forgot Password </a> -->
             

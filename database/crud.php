@@ -33,8 +33,8 @@
             }
         }
 
-        public function editMember($id, $fname, $lname, $gender, $email, $address){
-                $sql = "UPDATE `members` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,`emailaddress`=:email,`address`=:address WHERE members_id = :id";
+        public function editMember($id, $fname, $lname, $gender, $email, $address, $avatar_path){
+                $sql = "UPDATE `members` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,`emailaddress`=:email,`address`=:address, `avatar_path`=:avatar_path WHERE members_id = :id";
 
             try{
                     $stmt = $this->db->prepare($sql);
@@ -45,6 +45,7 @@
                     $stmt->bindparam(':gender', $gender);
                     $stmt->bindparam(':email', $email);
                     $stmt->bindparam(':address', $address);
+                    $stmt->bindparam(':avatar_path', $avatar_path);
         
 
                     $stmt->execute();

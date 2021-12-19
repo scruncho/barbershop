@@ -6,14 +6,14 @@
     
     <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
   <br>
-    <center>
-    <div class="card" style="width: 35rem;">
-    <div class="container p-5 my-5 border"> 
+    <!-- <center> -->
+    <!-- <div class="card" style="width: 35rem;"> -->
+    <!-- <div class="container">  -->
     <form method="post" action="submit.php" enctype="multipart/form-data">
 
     <div class="form-group">
             <label for="firstname">First Name</label>
-            <input required type="text" class="form-control" id="firstname" name="firstname">
+            <input required type="text" class="form-control" id="firstname" name="firstname" autocomplete="off">
         </div>
         <div class="form-group">
             <label for="lastname">Last Name</label>
@@ -43,19 +43,18 @@
              aria-describedby="phoneHelp">
             <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
         </div>
+
         <div class="custom-file">
-         
             <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar">
             <label class="custom-file-label" for="avatar">Choose File</label>
             <small id="avatar" class="form-text text-danger">File Upload is Optional</small>
-
         </div>
         
-        <button type="submit" name="submit" class="btn btn-primary" class="btn-block" style="width:100%">Submit</button>
+        <a href="index.php" class="btn btn-secondary my-2 text-light">Cancel</a> <button type="submit" name="submit" class="btn btn-primary" >Submit</button>
 </form>
-</div>
-</div>
-</center>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </center> -->
 <br>
 <br>
 <br>

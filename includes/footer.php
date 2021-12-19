@@ -1,5 +1,5 @@
 
-    <div id="footer" class="p-3 mb-2 bg-primary text-white fixed-bottom"> 
+    <div id="footer" class="p-2  bg-secondary text-white fixed-bottom"> 
       <footer class="text-center"> Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Delight Cut</footer>
     </div> 
 </div> 

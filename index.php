@@ -8,8 +8,8 @@ require_once 'database/conn.php';
 <br>
 <br>
 <h1 class="text-center">Delight Cut</h1>
-<P class="text-center">Presents Another Customer Appreciation Day</P>
-<P class="text-center">December 22, 2021</P>
+<P style="font-size: 30px;" class="text-center">Presents Another Customer Appreciation Day</P>
+<P style="font-size: 30px;" class="text-center">December 22, 2021</P>
 <P class="text-center" style="color:blue;text-align:center; font-size: 40px">register to participate</P>
 
 

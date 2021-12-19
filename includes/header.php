@@ -35,7 +35,7 @@ include_once 'includes/session.php' ?>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
       <a class="navbar-brand" href="index.php"><img src="images/logo.png" style="width:50px;height:50px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,8 +66,8 @@ include_once 'includes/session.php' ?>
             <a class="nav-item nav-link" href="login.php">Login</a>
           <?php } else { ?>
             <li class="nav-item">
-              <a class="nav-item nav-link" href="#"><span>Welcome <?php echo strtoupper($_SESSION['username']) ?>! </span></a>
-              <a class="nav-item nav-link" href="logout.php">Logout</a>
+              <a class="nav-item nav-link" href="#"><span>Welcome <?php echo strtoupper($_SESSION['username']) ?>! </span></a><a class="nav-item nav-link" href="logout.php"><span>Logout</span></a>
+              <!-- <a class="nav-item nav-link" href="logout.php">Logout</a> -->
             </li>
         </ul>
       <?php } ?>
