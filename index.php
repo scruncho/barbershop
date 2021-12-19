@@ -10,7 +10,7 @@
     <h1 class="text-center" >Delight Cut</h1>
     <P class="text-center">Presents Another Customer Appreciation Day</P>
     <P class="text-center">December 22, 2021</P>
-    <P class="text-center">register to participate</P>
+    <P class="text-center" style="color:blue;text-align:center; font-size: 40px">register to participate</P>
 
 
   <center><a href="subscribe.php" class="btn btn-info" role="button">Register Here</a></center>  

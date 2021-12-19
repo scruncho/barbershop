@@ -42,5 +42,6 @@ div.desc {
 
   p { 
    color:#090549;
-   font-size: large;
+   font-size: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
