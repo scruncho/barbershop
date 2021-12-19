@@ -23,24 +23,24 @@
 <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
 <br>
 <center>
-<div class="card" style="width: 20rem;">
+<div class="card" style="width: 25rem;">
     
     <h5 class="bg-secondary text-light"><?php echo $title ?></h5>
 
 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
         <table class="table table-sm">
             <tr>
-                <td><label for="username">Username: * </label></td>
+                <td><label for="username">Username:  </label><label style="color:red">*</label></td>
                 <td><input type="text" name="username" class="form-control" id="username" value="<?php if($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>">
                 </td>
             </tr>
             <tr>
-                <td><label for="password">Password: * </label></td>
+                <td><label for="password">Password:  </label><label style="color:red">*</label></td>
                 <td><input type="password" name="password" class="form-control" id="password">
                 </td>
             </tr>
 </table>
-        <input type="submit" value="Login" class="btn btn-secondary"><br/>
+        <button class="btn btn-primary my-5"><a href="index.php" class="text-light">Cancel</a></button> <input type="submit" value="Login" class="btn btn-secondary"><br/>
         <br>
         <!-- <a href="#"> Forgot Password </a> -->
             
