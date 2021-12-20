@@ -23,7 +23,7 @@
 <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
 <br>
 <center>
-<div class="card" style="width: 20rem;">
+<div class="card" style="width: 22rem;">
     
     <h5 class="bg-secondary text-light"><?php echo $title ?></h5>
 
