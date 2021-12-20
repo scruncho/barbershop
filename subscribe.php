@@ -3,7 +3,7 @@
     require_once 'includes/header.php'; 
     require_once 'database/conn.php'; 
 ?>
-    
+    <div class="container p-md-4">
     <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
   <br>
     <!-- <center> -->
@@ -52,7 +52,7 @@
         
         <a href="index.php" class="btn btn-secondary my-2 text-light">Cancel</a> <button type="submit" name="submit" class="btn btn-primary" >Submit</button>
 </form>
-<!-- </div> -->
+</div>
 <!-- </div> -->
 <!-- </center> -->
 <br>

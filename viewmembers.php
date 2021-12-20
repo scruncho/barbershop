@@ -9,7 +9,7 @@ $results = $crud->getMembers();
 
 
 ?>
-
+<div class="container">
 <a href="search.php" class="btn btn-primary my-2 text-light">Search</a>
 <table class="table table-bordered">
     <thead class="table-secondary">
@@ -45,5 +45,5 @@ $results = $crud->getMembers();
 
 </table>
 
-
+    </div>
 <?php require_once 'includes/footer.php'; ?>

@@ -73,7 +73,8 @@ include_once 'includes/session.php' ?>
       <?php } ?>
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
 
-      <br>
-      <br>
+      <!-- <br>
+      <br> -->
+      

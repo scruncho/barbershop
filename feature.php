@@ -7,7 +7,7 @@
 
 
 
-<div class="row justify-content-md-center"> 
+<div class="row justify-content-md-center p-md-4"> 
 <div class="gallery">
     <img class="img-fluid img-thumbnail rounded" src="gallery/img10.jpg">
 </div>

@@ -13,8 +13,8 @@ if (isset($_POST['submit'])){
 
 //image handling-------------------------------------------
 
-$orig_file = $_FILES["avatar"]["tmp_name"];
-$ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+$orig_file = $_FILES["avatar_path"]["tmp_name"];
+$ext = pathinfo($_FILES["avatar_path"]["name"], PATHINFO_EXTENSION);
 $target_dir = 'uploads/';
 // $destination = $target_dir . basename($_FILES["avatar"]["name"]);
 $destination = "$target_dir$email.$ext";
@@ -22,8 +22,6 @@ move_uploaded_file($orig_file,$destination);
 
 
 //image handling-------------------------------------------
-
-    
 
         //call crud function
         $result = $crud->editMember($id, $fname, $lname, $gender, $email, $address, $destination);

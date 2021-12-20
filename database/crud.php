@@ -57,6 +57,29 @@
                
 
         }
+        public function updateMember($id, $fname, $lname, $gender, $email, $address){
+                $sql = "UPDATE `members` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,`emailaddress`=:email,`address`=:address WHERE members_id = :id";
+
+            try{
+                    $stmt = $this->db->prepare($sql);
+                    //bind all placeholders to the actual values
+                    $stmt->bindparam(':id', $id);
+                    $stmt->bindparam(':fname', $fname);
+                    $stmt->bindparam(':lname', $lname);
+                    $stmt->bindparam(':gender', $gender);
+                    $stmt->bindparam(':email', $email);
+                    $stmt->bindparam(':address', $address);
+        
+
+                    $stmt->execute();
+                    return true;
+            }catch (PDOException $e) {
+                echo $e->getMessage();
+                return false;
+            }
+               
+
+        }
 
         public function getMembers(){
             try{
