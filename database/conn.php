@@ -1,19 +1,19 @@
 <?php
    
    //Development Database
-  $host = 'localhost';
-  $db = 'barbershop_db';
-  $user = 'root';
-  $pass = '';
-  $charset= 'utf8mb4';
+  // $host = 'localhost';
+  // $db = 'barbershop_db';
+  // $user = 'root';
+  // $pass = '';
+  // $charset= 'utf8mb4';
    
   
   // Remote Database
-  // $host = 'remotemysql.com';
-  // $db = '21p0v5xYW8';
-  // $user = '21p0v5xYW8';
-  // $pass = 'tDPhiP0IOA';
-  // $charset= 'utf8mb4';
+  $host = 'remotemysql.com';
+  $db = '21p0v5xYW8';
+  $user = '21p0v5xYW8';
+  $pass = 'tDPhiP0IOA';
+  $charset= 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
