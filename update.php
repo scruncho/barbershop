@@ -15,7 +15,7 @@ if (!isset($_GET['id'])) {
     $member = $crud->getMember($id);
 }
 ?>
-
+<div class="container p-md-4">
 
 <center><img src="images/logo.png" style="width:150px;height:150px;"></center>
 <h1 class="text-center">UPDATE RECORD</h1>
@@ -59,17 +59,18 @@ if (!isset($_GET['id'])) {
         <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
     </div>
 
-    <div class="custom-file">
+    <!-- <div class="custom-file">
 
-        <input type="file" accept="image/*" class="custom-file-input" src="<?php echo $member['avatar_path'] ?>" id="avatar_path" name="avatar_path">
+        <input type="file" accept="image/*" class="custom-file-input" src="<?php // echo $member['avatar_path'] ?>" id="avatar_path" name="avatar_path">
         <label class="custom-file-label" for="avatar">Choose File</label>
         <small id="avatar" class="form-text text-danger">File Upload is Optional</small>
 
-    </div>
+    </div> -->
 
 
     <button type="submit" name="submit" class="btn btn-primary" class="btn-block" style="width:100%">Save Changes</button>
 </form>
+</div>
 <br>
 <br>
 <br>

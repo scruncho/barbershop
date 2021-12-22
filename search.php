@@ -52,7 +52,7 @@ $results = $crud->getMembers();
 
                         <?php
                         //development connection
-                        // $con = mysqli_connect("localhost", "root", "", "barbershop_db");
+                        //$con = mysqli_connect("localhost", "root", "", "barbershop_db");
 
                         //production connection
                           $con = mysqli_connect("remotemysql.com","21p0v5xYW8","$pass","21p0v5xYW8");
