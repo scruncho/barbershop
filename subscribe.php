@@ -1,5 +1,5 @@
 <?php 
-    $title = 'Index';
+    $title = 'Registration';
     require_once 'includes/header.php'; 
     require_once 'database/conn.php'; 
 ?>
